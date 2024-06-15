@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 4</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="resultado">
+    <h2>Calcular la Serie (1*1) + (2*2) + (3*3) + ... + (N*N)</h2>
+    <script>
+        // Solicitar al usuario el valor de N
+        var N = parseInt(prompt("Ingrese el valor de N:"));
+
+        // Inicializar la variable para la suma
+        var suma = 0;
+
+        // Calcular la suma de la serie
+        for (var i = 1; i <= N; i++) {
+            suma += i * i;
+        }
+
+        // Mostrar el resultado
+        document.write("El valor de N es: " + N  );
+        document.write("La suma de la serie es: " + suma );
+    </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="resultado">
+    <script>
+        var numerosPares = [];
+        var numero = 2; // El primer número par
+        var contador = 0;
+        var cantidadPares = 4; // Cantidad de números pares que queremos
+
+        // Calcular los primeros 4 números pares
+        while (contador < cantidadPares) {
+            numerosPares.push(numero);
+            numero += 2;
+            contador++;
+        }
+
+        // Calcular la suma de los números pares
+        var suma = 0;
+        for (var i = 0; i < cantidadPares; i++) {
+            suma += numerosPares[i];
+        }
+       // Calcular la media aritmética
+       var mediaAritmetica = suma / cantidadPares;
+
+       // Mostrar los resultados
+        document.write("<h2>Primeros 4 Números Pares y su Media Aritmética</h2>");
+        document.write("<p>Los primeros 4 números pares son: ");
+
+       // Imprimir cada número par
+       for (var i = 0; i < cantidadPares; i++) {
+        document.write(numerosPares[i]);
+         if (i < cantidadPares - 1) {
+        document.write(", ");
+    }
+}
+        document.write("</p>");
+           document.write("La media aritmética es: " + mediaAritmetica + "</p>");
+        </script>
+        </div>
+</body>
+</html>

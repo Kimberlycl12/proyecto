@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="resultado">
+    <h2>Múltiplos de 7 entre 100 y 300 (excluyendo 120 a 180)</h2>
+    <script>
+        for (var i = 100; i <= 300; i++) {
+            // Verificar si el número es múltiplo de 7 y no está entre 120 y 180
+            if (i % 7 === 0 && (i < 120 || i > 180)) {
+                document.write(i + "<br>");
+            }
+        }
+
+    </script>
+    </div>
+</body>
+</html>

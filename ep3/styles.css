@@ -1,0 +1,19 @@
+.contenedor{
+    width:75%;
+    height: 350px;
+    border: 1px solid red;
+    margin: auto;
+}
+.circulo {
+    border-radius: 50%;
+    background-color: rgba(255, 0, 0, 0.568);
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+#resultado{
+    height: 500px;
+    background-color: rgba(175, 27, 27, 0.76);
+    margin: 30px;
+    color: rgb(0, 0, 0);
+}
